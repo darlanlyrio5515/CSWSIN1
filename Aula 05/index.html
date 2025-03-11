@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>negrito<b>/<strong>destaque</strong><h2>
+        Na frase temos uma parte do texto em negrito usando a tag b(nao semantica)<br>
+    Na frase temos uma parte<strong>negrito</strong> usando a tag strong(com semantica)<br><hr>
+<h1>Italico/Ênfase</h1>
+Nesta frase vamos entrar com uma palavra em <i>ITALICO</i>usando a tag i (não semantica)<br>
+Nesta frase vamos entrar com uma palavra em <em>ITALICO</em> usando a tag em(com semantica)<br><hr>
+<h1>texto marcador</h1>
+Aqui vamos usar um texto com destaque <mark style="background:green">de marcador de texto</mark>usando mark<br>
+Aqui vamos usar um texto com destaque<mark style="background:yellow">de marcador de texto</mark>usando mark<br><hr>
+<h1>TEXTO GRANDE e pegueno</h1>
+Estamos trabalhando aqui com um<big>TEXTO GRANDE</big> e um<small> texto pequeno</small><hr>
+<h1>texto deletado</h1>
+Neste paragrafo vamos trabalhar com um texto <del>que foi excluido</del> da frase<br><hr>
+<h1>texto inserido</h1>
+Nesta frase vamos demostrar como <ins>que foi inserido</ins> na frase de forma semantica<br>
+Nesta frase vamos demostrar como <ins>que foi inserido</ins> na frase de forma semantica<br><hr>
+<h1>texto sobrescrito</h1>
+Vamos demonstrar uma formula da equação do segundo grau ax<sup>²</sup>+bx+c=0 usando tag sup<hr>
+<h1>trecho do codigo fonte</h1>
+<pre><code>
+    import pandas as pd
+
+    def remove_outlier(df_old):
+        # Calculate the IQR for each numerical column
+        Q1 = df_old.quantile(0.25)
+        Q3 = df_old.quantile(0.75)
+        IQR = Q3 - Q1
+    
+        # Define the limits for the outliers
+        lower_bound = Q1 - 1.5 * IQR
+        upper_bound = Q3 + 1.5 * IQR
+    
+        # Filter the dataframe to remove rows with outliers
+        df_filtered = df_old[~((df_old < lower_bound) | (df_old > upper_bound)).any(axis=1)]
+    
+        return df_filtered    
+    <pre><code></code><hr>
+<h1>Citaçoes(quotation)simples</h1>
+segundo steve Jobs <blockquote>A tecnologia move o mundo</blockquote><hr>
+<h1>Citaçoes Completas</h1>
+<blockquote>segundo Sandra Kussonoki no seu livro A dança e o ventre</blockquote><hr>
+<h1>Abreviaçoes</h1>
+estamos estudando <abbr>HTML e CSS</abbr><hr>
+<h1>texto invertido</h1>
+Estou estudando<abbr></abbr>    
+estou estudando <bdo dir="rtl"<abbr>htlm</abbr></bdo><hr>
