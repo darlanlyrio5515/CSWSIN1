@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilos Gerais */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: white;
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    form input, form select, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#curriculo">Currículo</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#serviços">serviços</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="#github">GitHub</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <h1>Bem-vindo ao meu portfólio!</h1>
+   <border><img src="file.enc" alt="Foto pessoal"></border> 
+    <p>Olá, sou Darlan de Assis Lyrio, e aqui você encontrará informações sobre minha jornada acadêmica, profissional, meus hobbies e muito mais!</p>
+    <h2>Minha História</h2>
+    <p>Meu nome é Darlan, e sou uma pessoa dedicada ao aprendizado contínuo e ao crescimento profissional. Iniciei minha jornada acadêmica na Escola Manoel de Paula Serrão, onde estudei por quatro anos e construí uma base sólida para minha formação.
+        Posteriormente, ingressei em uma Escola de Tempo Integral, onde concluí o Ensino Médio juntamente com um Curso Técnico em Elétrica, ampliando meus conhecimentos na área técnica e desenvolvendo habilidades práticas essenciais para o mercado de trabalho.
+        Além disso, busquei aprimorar minhas competências tecnológicas por meio de um curso de Informática, e me dediquei ao estudo de Inglês, entendendo a importância da comunicação em uma segunda língua. Atualmente, sigo me desenvolvendo e estou estudando Espanhol, fortalecendo ainda mais minha formação multicultural e versatilidade profissional.           
+        Estou em constante busca por novos aprendizados e desafios, sempre com comprometimento e vontade de evoluir.
+começei a me interessar em sistemas a partir do meu curso de informatica onde descobrir uma coisa que despertou um grande intereçe em mim.
+    </p>
+    <h2>Objetivos Profissionais</h2>
+    <p>Meu objetivo é me especializar em desenvolvimento web e trabalhar como empresario no ramo de tecnologias especializadas em cybersegurança e codicos .</p>
+    <h2>Hobbies e Interesses</h2>
+    <p>Adoro volei,futsal,surf,ler,e assistir filmes e series, e tento aprender um pouco de tudo</p>
+</section>
+<section id="curriculo">
+    <h2>Currículo</h2>
+    <table>
+        <tr>
+            <th>Experiência</th>
+            <th>Data</th>
+        </tr>
+        <tr>
+            <td>embalador de mercado</td>
+            <td>20/11/2023 a 15/02/2024</td>
+        </tr>
+        <tr>
+            <td>barman</td>
+            <td>13/03/2024 a 03/02/2025</td>
+        </tr>
+        </section>      
+    </table>
+</section>
+  <section id="cursos">
+    <h2>Cursos Realizados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Curso</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ensino Médio + Técnico em Elétrica</td>
+          <td>Concluído</td>
+        </tr>
+        <tr>
+          <td>Informática Avançada</td>
+          <td>Concluído</td>
+        </tr>
+        <tr>
+          <td>Inglês</td>
+          <td>Concluído</td>
+        </tr>
+        <tr>
+          <td>Espanhol</td>
+          <td>Em andamento</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <section id="serviços">
+    <h2>Meus Serviços</h2>
+    <p>Ofereço serviços de desenvolvimento de sites, com diferentes tipos de páginas:</p>
+
+    <table>
+        <tr>
+            <th>Tipo de Site</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>Site Estático (1-2 páginas)</td>
+            <td>R$ 500</td>
+        </tr>
+        <tr>
+            <td>Site Estático (3-5 páginas)</td>
+            <td>R$ 1000</td>
+        </tr>
+        <tr>
+            <td>Site Avançado (mais de 5 páginas)</td>
+            <td>R$ 1500</td>
+        </tr>
+    </table>
+</section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="5" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="github">
+    <h2>Meu GitHub</h2>
+    <a href="https://github.com/darlanlyrio5515" target="_blank">Visite meu GitHub</a>
+</section>
+
+
+</body>
+</html>
