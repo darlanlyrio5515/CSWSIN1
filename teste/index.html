@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoRecicla - Sistema de Reciclagem</title>
+  <link rel="stylesheet" href="style.css">
+<body>
+  <header>
+    <h1>EcoRecicla</h1>
+    <p>Conectando produtores e recicladores por um mundo melhor</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="mostrar('informacoes')">Informaçoes</a>
+    <a href="#" onclick="mostrar('Serviços')">Serviços</a>
+    <a href="#" onclick="mostrar('Sobre nós')">Sobre nós</a>
+    <a href="#" onclick="mostrar('Ajuda')">Ajuda</a>
+  </nav>
+
+
+
+  <section id="Serviços">
+    <h2>Serviços da EcoRecicla</h2>
+    <p>Conectamos produção consciente e reciclagem eficiente em um só lugar.</p>
+  
+    <ul>
+      <li>
+        <h3>Gerenciamento de Resíduos</h3>
+        <p>Monitoramos e registramos os resíduos produzidos por empresas, com controle de tipo, peso e frequência de descarte.</p>
+      </li>
+      <li>
+        <h3>Coleta Programada</h3>
+        <p>Organizamos a coleta de resíduos com recicladores parceiros, garantindo agilidade e responsabilidade ambiental.</p>
+      </li>
+      <li>
+        <h3>Triagem Inteligente</h3>
+        <p>Classificação automatizada dos materiais recicláveis com base em critérios como tipo, estado e valor de reaproveitamento.</p>
+      </li>
+      <li>
+        <h3>Conexão com Recicladores</h3>
+        <p>Plataforma integrada que conecta produtores de lixo a recicladores certificados e disponíveis na sua região.</p>
+      </li>
+      <li>
+        <h3>Relatórios e Indicadores</h3>
+        <p>Relatórios personalizados sobre volume reciclado, impacto ambiental reduzido e desempenho da gestão de resíduos.</p>
+      </li>
+      <li>
+        <h3>Educação Ambiental</h3>
+        <p>Campanhas e treinamentos para empresas e comunidades sobre boas práticas de descarte e reciclagem.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="Sobre nós">
+    <h2>A EcoRecicla é uma empresa inovadora dedicada a promover a sustentabilidade por meio da conexão entre produtores de resíduos e recicladores certificados. Nosso objetivo é transformar o modo como o lixo é tratado, oferecendo uma plataforma prática, segura e eficiente para gerenciar resíduos recicláveis.
+
+        Com a EcoRecicla, empresas e cidadãos que produzem lixo podem registrar seus resíduos e localizar recicladores disponíveis para coleta e reaproveitamento. Já os recicladores têm acesso a um painel de controle intuitivo, onde podem visualizar oportunidades de coleta, confirmar serviços e contribuir ativamente para a economia circular.
+        
+        Nosso sistema também fornece dados em tempo real, como status dos resíduos, quantidade coletada, e pontos de coleta próximos, permitindo um acompanhamento transparente e responsável do ciclo dos materiais.
+        
+        Juntos, produtores e recicladores formam uma rede que reduz impactos ambientais, estimula a reciclagem e fortalece a economia verde.
+        
+        Seja você um produtor ou um reciclador, junte-se à EcoRecicla e faça parte dessa mudança positiva para o planeta.</h2>
+  </section>
+
+  <section id="Ajuda">
+    <h2>Como a EcoRecicla Pode Ajudar</h2>
+    <p>A EcoRecicla oferece soluções completas para a gestão de resíduos, promovendo práticas sustentáveis para empresas e comunidades.</p>
+  
+    <ul>
+      <li>
+        <h3>Redução de Impacto Ambiental</h3>
+        <p>Ajudamos sua empresa a diminuir a pegada ecológica com um descarte consciente e reaproveitamento de materiais recicláveis.</p>
+      </li>
+  
+      <li>
+        <h3>Eficiência na Gestão de Resíduos</h3>
+        <p>Oferecemos um sistema de controle de resíduos, com dados sobre produção, coleta e reciclagem em tempo real.</p>
+      </li>
+  
+      <li>
+        <h3>Conformidade com Leis Ambientais</h3>
+        <p>Garantimos que sua empresa esteja em conformidade com as normas de descarte, evitando multas e sanções ambientais.</p>
+      </li>
+  
+      <li>
+        <h3>Valorização da Imagem Corporativa</h3>
+        <p>Empresas sustentáveis são mais valorizadas no mercado. Mostrar compromisso com o meio ambiente atrai clientes e investidores.</p>
+      </li>
+  
+      <li>
+        <h3>Educação e Treinamento</h3>
+        <p>Capacitamos colaboradores e comunidades para adotar hábitos sustentáveis e conscientes no dia a dia.</p>
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <p>&copy; 2025 EcoRecicla. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function mostrar(id) {
+      const secoes = document.querySelectorAll('section');
+      secoes.forEach(secao => secao.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
